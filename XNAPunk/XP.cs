@@ -104,7 +104,10 @@ namespace XNAPunk
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(BackgroundColor);
-
+            /*GraphicsDevice.SamplerStates[0] = SamplerState.LinearWrap;
+            GraphicsDevice.SamplerStates[0].AddressU = TextureAddressMode.Wrap;
+            GraphicsDevice.SamplerStates[0].AddressV = TextureAddressMode.Wrap;*/
+            //Canvas.Begin(SpriteSortMode.Texture,BlendState.AlphaBlend,SamplerState.LinearWrap,DepthStencilState.None,RasterizerState.CullCounterClockwise);
             Canvas.Begin();
             World.Draw(gameTime);
             Canvas.End();

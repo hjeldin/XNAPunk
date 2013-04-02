@@ -8,7 +8,7 @@ using XNAPunk.graphics.anim;
 
 namespace XNAPunk.graphics
 {
-    class AnimatedSpriteMap : SpriteMap
+    public class AnimatedSpriteMap : SpriteMap
     {
         public Dictionary<String, Animation> Animations = new Dictionary<String, Animation>();
 
@@ -41,7 +41,7 @@ namespace XNAPunk.graphics
             Play(animation, false);
         }
 
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             if (!Playing) return;
 

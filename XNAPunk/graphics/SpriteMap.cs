@@ -7,15 +7,15 @@ using Microsoft.Xna.Framework;
 
 namespace XNAPunk.graphics
 {
-    class SpriteMap : Graphic
+    public class SpriteMap : Graphic
     {
 
-        private Texture2D Texture;
+        protected Texture2D Texture;
 
-        private Rectangle SourceRect = new Rectangle();
-        private int XCells, YCells;
+        protected Rectangle SourceRect = new Rectangle();
+        protected int XCells, YCells;
         public int TotalFrames;
-        private int _Frame = 0;
+        protected int _Frame = 0;
         public int Frame
         {
             get { return _Frame; }

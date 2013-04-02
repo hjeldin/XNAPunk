@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace XNAPunk.graphics
 {
-    class Text : Graphic
+    public class Text : Graphic
     {
         public SpriteFont Font = XP.Font;
         public string action = "";
