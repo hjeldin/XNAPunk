@@ -72,6 +72,7 @@
     <Compile Include="graphics\SpriteMap.cs" />
     <Compile Include="graphics\Text.cs" />
     <Compile Include="graphics\TiledSpriteMap.cs" />
+    <Compile Include="graphics\TileMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="task\RepeatingTask.cs" />
     <Compile Include="task\Task.cs" />
